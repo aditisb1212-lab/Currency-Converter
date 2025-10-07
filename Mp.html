@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Insights & Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Financial Insights & Predictions</h1>
+    </header>
+    <main>
+        <section id="currency-converter">
+            <h2>Currency Converter</h2>
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="from-currency"></select>
+            <select id="to-currency"></select>
+            <button onclick="convertCurrency()">Convert</button>
+            <p id="conversion-result"></p>
+        </section>
+        <section id="ai-prediction">
+            <h2>AI Trading Predictor</h2>
+            <button onclick="getAIPrediction()">Get Prediction</button>
+            <div id="prediction-results">
+                <p id="ai-prediction"></p>
+                <canvas id="investmentChart" width="400" height="200"></canvas>
+                <p id="investment-advice"></p>
+            </div>
+        </section>
+        <section id="gold-prices">
+            <h2>Gold Prices in India</h2>
+            <button onclick="fetchGoldPrice()">Get Gold Price</button>
+            <p id="gold-price"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
